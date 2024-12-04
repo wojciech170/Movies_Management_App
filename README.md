@@ -1,63 +1,71 @@
 # Movies Management App 🎬
 
-Zarządzaj swoją biblioteką filmów z pomocą aplikacji bazującej na API OMDB (http://omdbapi.com/). Wyszukuj filmy, dodawaj do list obejrzanych lub "do obejrzenia", a także oceniaj swoje ulubione produkcje!
+Manage your personal movie library with this application powered by the OMDB API (http://omdbapi.com/). Search for movies, add them to your watched or "to-watch" lists, and rate your favorite productions!
 
-## Funkcjonalności 🚀
+## Project Status 🚧
 
-1. **Wyszukiwarka filmów**:
-   - Wprowadzanie tytułu filmu i przeglądanie wyników (okładki, tytuły, rok produkcji).
-   - Możliwość oceny filmu w skali 1-5.
-   - Dodawanie filmów do list "Obejrzane" lub "Do obejrzenia".
+This project is in the early stages of development. Work is ongoing to establish the basic structure and implement initial features. Stay tuned for updates in the repository!
 
-2. **Strona z detalami filmu**:
-   - Wyświetlanie szczegółowych informacji o filmie.
-   - Możliwość oceny i dodania filmu do ulubionych.
-   - Obsługa unikalnych ID w adresie URL.
+## Features 🚀
 
-3. **Listy użytkownika**:
-   - Lista filmów "Obejrzane" i "Do obejrzenia".
-   - Filtrowanie i sortowanie według tytułu, gatunku, oceny lub roku produkcji.
-   - Opcja usuwania filmów z listy.
+1. **Movie Search**:
+   - Enter a movie title and browse results (poster, title, production year).
+   - Rate movies on a scale from 1 to 5.
+   - Add movies to "Watched" or "To Watch" lists.
 
-4. **Obsługa błędów i zapis danych**:
-   - Wyświetlanie spinnera podczas ładowania.
-   - Informowanie o błędach użytkownika.
-   - Zapis danych w localStorage.
+2. **Movie Details Page**:
+   - Display detailed information about a selected movie.
+   - Rate and mark movies as favorites.
+   - Support for unique IDs in the URL.
 
-## Technologie użyte w projekcie 🛠️
+3. **User Lists**:
+   - View lists of "Watched" and "To Watch" movies.
+   - Filter and sort movies by title, genre, rating, or production year.
+   - Remove movies from lists.
 
-- **React**: Zarządzanie komponentami i stanem aplikacji.
-- **Redux**: Centralne zarządzanie stanem, w tym zapisywanie list i ocen.
-- **OMDB API**: Zewnętrzne źródło danych o filmach.
-- **LocalStorage**: Przechowywanie danych użytkownika.
-- **CSS/SCSS**: Stylizacja aplikacji.
+4. **Error Handling and Data Persistence**:
+   - Display a spinner while loading.
+   - Inform users of errors with relevant messages.
+   - Save data in localStorage.
 
-## Instalacja i uruchomienie ⚙️
+## Technologies Used 🛠️
 
-1. **Sklonuj repozytorium**:
+- **React**: Component-based architecture and state management.
+- **Redux**: Centralized state management for lists and ratings.
+- **OMDB API**: External data source for movie information.
+- **LocalStorage**: Storing user data locally.
+- **CSS/SCSS**: Styling the application.
+
+## Installation and Setup ⚙️
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/wojciech170/Movies_Management_App.git
    cd Movies_Management_App
+
    ```
 
-2. **Zainstaluj zależności**:
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-3. **Uruchom aplikację**:
+3. **Start the application**:
    ```bash
    npm start
    ```
 
-4. **Uzyskaj klucz API OMDB: Zarejestruj się na OMDB i wprowadź klucz API do pliku .env.**
+4. **Obtain an OMDB API key**:
+   
+   Register on OMDB to generate an API key, then add it to the .env file.
 
-## Rozwój aplikacji 💡
+## Future Development 💡
 
-* Planujesz rozbudowę funkcji o rekomendacje filmów na podstawie reżysera lub gatunku?
-* Dodanie opcji edycji ocen?
+* Implement movie recommendations based on director or genre.
+* Add the ability to edit movie ratings.
 
-## Podziękowania 🤝
 
-Dziękuję za odwiedzenie repozytorium! Feedback i sugestie mile widziane.
+## Acknowledgments 🤝
+
+Thank you for visiting the repository! Feedback and suggestions are highly appreciated.
 
