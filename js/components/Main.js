@@ -6,7 +6,7 @@ import MovieSearch from "./MovieSearch";
 const Main = () => {
     return (
         <Provider store={store}>
-                <MovieSearch/>
+            <MovieSearch/>
         </Provider>
     );
 };

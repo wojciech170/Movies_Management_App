@@ -27,12 +27,9 @@ const fetchFailed = (error) => {
 const fetchMovies = (query) => {
     return async (dispatch) => {
         dispatch(startFetching());
-        try {
-            const movies = await api.fetchData(query);
-            dispatch(moviesFetched(movies));
-        } catch (error) {
-            dispatch(fetchFailed(error));
-        }
+        api.fetchData(query)
+            .then(movies => dispatch(moviesFetched(movies)))
+            .catch(error => dispatch(fetchFailed(error)))
     };
 };
 
