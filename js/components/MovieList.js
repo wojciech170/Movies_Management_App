@@ -1,18 +1,26 @@
 import React from 'react';
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 
 const MovieList = () => {
-    const movies = useSelector(state => state.movies);
+    const movies = useSelector(state => state.moviesReducer.movies.Search);
+    const loading = useSelector(state => state.moviesReducer.loading);
+    const error = useSelector(state => state.moviesReducer.error);
 
-    console.log(movies);
     return (
-        <>
-            {movies  ?
-                movies.search.map((movie, index) => <div key={index}><img src={movie.poster} alt={movie.title}/>{movie.title}</div>)
+        <div>
+            {loading && "Loading..."}
+            {movies ?
+                movies.map((movie, index) => (
+                    <div key={index}>
+                        <img src={movie.Poster} alt={movie.Title}/>
+                        {movie.Title}
+                    </div>
+                ))
                 :
-                null
+                <></>
             }
-        </>
+            {error && error}
+        </div>
     );
 };
 
