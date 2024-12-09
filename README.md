@@ -57,7 +57,10 @@ This project is in the early stages of development. Work is ongoing to establish
 
 4. **Obtain an OMDB API key**:
    
-   Register on OMDB to generate an API key, then add it to the .env file.
+   Register on OMDB to generate an API key, then add it to the api_key.js file in js folder as:
+   ```js
+   export const apiKey = (here put key);
+   ```
 
 ## Future Development 💡
 

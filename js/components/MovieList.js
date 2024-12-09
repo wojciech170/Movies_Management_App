@@ -13,7 +13,7 @@ const MovieList = () => {
                 movies.map((movie, index) => (
                     <div key={index}>
                         <img src={movie.Poster} alt={movie.Title}/>
-                        {movie.Title}
+                        Title: {movie.Title} Production Year: {movie.Year}
                     </div>
                 ))
                 :
