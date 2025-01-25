@@ -1,10 +1,11 @@
 import React from 'react';
 
-const ListItem = () => {
+const ListItem = ({movie}) => {
     return (
-        <div>
-            {/* Your component content goes here */}
-        </div>
+            <>
+                <img src={movie.Poster} alt={movie.Title}/>
+                Title: {movie.Title} Production Year: {movie.Year}
+            </>
     );
 };
 

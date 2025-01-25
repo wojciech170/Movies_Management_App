@@ -1,5 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import ListItem from './ListItem';
 
 const MovieList = () => {
     const movies = useSelector(state => state.moviesReducer.movies.Search);
@@ -12,8 +13,7 @@ const MovieList = () => {
             {movies ?
                 movies.map((movie, index) => (
                     <div key={index}>
-                        <img src={movie.Poster} alt={movie.Title}/>
-                        Title: {movie.Title} Production Year: {movie.Year}
+                        <ListItem movie={movie}/>
                     </div>
                 ))
                 :
