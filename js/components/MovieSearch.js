@@ -9,7 +9,7 @@ const MovieSearch = () => {
 
     return (
         <div>
-        <div>
+        <div className='search-bar'>
             <input
                 type='text'
                 placeholder='Movie Search...'

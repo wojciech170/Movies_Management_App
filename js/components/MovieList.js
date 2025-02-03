@@ -8,11 +8,11 @@ const MovieList = () => {
     const error = useSelector(state => state.moviesReducer.error);
 
     return (
-        <div>
+        <div className='movie-list'>
             {loading && "Loading..."}
             {movies ?
                 movies.map((movie, index) => (
-                    <div key={index}>
+                    <div className='movie-card' key={index}>
                         <ListItem movie={movie}/>
                     </div>
                 ))
